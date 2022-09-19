@@ -1,0 +1,12 @@
+<h1>Bienvenidos</h1>
+
+<nav>
+  <ul>
+    <li><a routerLink="/" [routerLinkActive]="'rojo verde'"
+      [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+    <li><a routerLink="/uno" [routerLinkActive]="'rojo verde'"
+      [routerLinkActiveOptions]="{ exact: true }">Uno</a></li>
+    <li><a routerLink="/dos" [routerLinkActive]="'rojo verde'">Dos</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

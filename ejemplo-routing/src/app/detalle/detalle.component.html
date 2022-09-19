@@ -1,0 +1,11 @@
+<p>Detalle</p>
+
+<div *ngIf="user">
+    <p>Id: {{ user.id }}</p>
+    <p>Username: {{ user.username }}</p>
+    <p>Name: {{ user.name }}</p>
+    <p>LastName: {{ user.lastName }}</p>
+</div>
+<div *ngIf="!user">
+    <p>No existe el usuario</p>
+</div>
