@@ -1,0 +1,14 @@
+<h1>Consulta al backend</h1>
+
+<ul>
+  <li *ngFor="let user of users$ | async">{{ user.id }}: {{ user.username }} ({{ user.lastName }}) 
+    <button (click)="borrar(user.id)">Borrar</button>
+  </li>
+</ul>
+
+<form [formGroup]="userForm">
+  <p>Username: <input type="text" formControlName="username" /></p>
+  <p>Username: <input type="text" formControlName="firstName" /></p>
+  <p>Username: <input type="text" formControlName="lastName" /></p>
+  <p><button (click)="onSubmit()">Enviar</button></p>
+</form>
